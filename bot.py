@@ -23,7 +23,6 @@ def getMessage():
 @app.route('/')
 def webhook():
     bot.remove_webhook()
-    # PythonAnywhere kullanıcı adın: wezoxy
     bot.set_webhook(url='https://wezoxy.pythonanywhere.com/' + TELEGRAM_TOKEN)
     return "✅ Telegram Webhook Bağlantısı Başarıyla Kuruldu!", 200
 
